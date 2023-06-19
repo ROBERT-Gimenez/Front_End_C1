@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/stylesAdd.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <p class="headerDescuento">20% de descuento en todos los productos!</p>
+        <section class="logo">
+            <img src="img/logo_tienda.png" alt="Logo de la tienda">
+            <p class="nombreTienda">Nombre Tienda</p>
+        </section>
+        <nav class="navegador">
+            <ul type="none">
+                <li><a class="opcionesNav" href="">Contacto</a></li>
+                <li><a class="opcionesNav" href="">Registrarme</a></li>
+                <li><a class="opcionesNav" href="">Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="formulario">
+            <p class="tituloForm">Añadí tu super!</p>
+            <p class="subtituloForm">Agregá tu personaje favorito completando las opciones.</p>
+            <form action="" method="">
+                <section class="datos1">
+                    <article class="datos1Parte1">
+                        <label for="nombre" class="tituloCampos">*Nombre</label>
+                        <input class="campo" type="text" id="nombre" name="nombre" required>
+                    </article>
+                    <article class="datos1Parte1">
+                        <label for="especie" class="tituloCampos">*Especie</label>
+                        <select class="campo" name="especie" id="especie" required>
+                            <option value="mut">Mutante</option>
+                            <option value="ali">Alien</option>
+                            <option value="hec">Hechicero</option>
+                            <option value="rep">Reptiliano</option>
+                        </select>
+                    </article>
+                </section>
+                <section class="datos1">
+                    <article class="datos1Parte1">
+                        <label for="fecha" class="tituloCampos">Fecha</label>
+                        <input class="campo" type="date" id="fecha" name="fecha">
+                    </article>
+                    <article class="datos1Parte1">
+                        <label for="foto" class="tituloCampos">Agregar Foto</label>
+                        <input class="campo" type="file" id="foto" name="foto">
+                    </article>
+                </section>
+                <section class="datos1">
+                    <textarea name="descripcion" class="descripcion">Descripción</textarea>
+                    <article class="datos1Parte1">
+                        <article class="checkyradio">
+                            <label class="tituloCampos">Poderes</label>
+                            <label class="opcionesCheckRadio">
+                                <input type="checkbox" name="poderes" value="vol">
+                                Volar
+                            </label>
+                            <label class="opcionesCheckRadio">
+                                <input type="checkbox" name="poderes" value="sup">
+                                Superinteligencia
+                            </label>
+                            <label class="opcionesCheckRadio">
+                                <input type="checkbox" name="poderes" value="vis">
+                                Vista de rayo láser
+                            </label>
+                            <label class="opcionesCheckRadio">
+                                <input type="checkbox" name="poderes" value="bil">
+                                Billetera gorda
+                            </label>
+                        </article>
+                        <hr>
+                        <article class="checkyradio">
+                            <label class="tituloCampos">Tipo de personaje</label>
+                            <label class="opcionesCheckRadio">
+                                <input type="radio" name="heroe" value="her">
+                                Heroe / Heroina
+                            </label>
+                            <label class="opcionesCheckRadio">
+                                <input type="radio" name="heroe" value="vil">
+                                Villano / Villana
+                            </label>
+                        </article>
+                    </article>
+                </section>
+                <section class="boton">
+                    <button type="submit">Añadir</button>
+                </section>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        Todos los derechos reservados a FRONT END 1
+    </footer>
+
+</body>
+
+</html>
